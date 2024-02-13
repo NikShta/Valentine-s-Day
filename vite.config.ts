@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: "/Valentine-s-Day/",
   plugins: [react()],
+  resolve: {
+    alias: { components: "/src/components", gifs: "/src/assets/gifs" },
+  },
 });
